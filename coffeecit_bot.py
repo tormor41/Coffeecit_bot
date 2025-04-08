@@ -25,7 +25,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Инициализация бота
-API_TOKEN = '8115722654:AAHINSxxi29lXbQfKOZhTc4E6HpakczBcsQ'  # Замените на реальный токен
+API_TOKEN = 'id bot'  # Замените на реальный токен
 bot = Bot(
     token=API_TOKEN,
     default=DefaultBotProperties(parse_mode=ParseMode.HTML)
@@ -358,7 +358,7 @@ async def main():
     # Добавляем первого админа
     admins = load_data(ADMINS_FILE)
     if not admins:
-        admins[str(473233346)] = True  # Замените на ваш ID
+        admins[str(id tg)] = True  # Замените на ваш ID
         save_data(admins, ADMINS_FILE)
 
     await dp.start_polling(bot)
